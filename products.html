@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>B&E — Products</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ==========================================
+       THEME TOGGLE
+  =========================================== -->
+
+  <button
+    class="theme-toggle"
+    id="themeToggle"
+    aria-label="Toggle light and dark mode"
+  >
+
+    <span class="label">Light</span>
+
+    <span class="icons">
+
+      <svg class="moon" viewBox="0 0 24 24">
+        <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/>
+      </svg>
+
+      <svg class="sun" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4"/>
+        <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+      </svg>
+
+    </span>
+
+  </button>
+
+
+  <!-- ==========================================
+       HEADER
+  =========================================== -->
+
+  <header>
+
+    <div class="wrap nav">
+
+      <a href="index.html" class="logo">
+        <span class="mark"></span>
+        B&E
+      </a>
+
+       <nav class="nav-links">
+
+        <a href="index.html">
+          Home
+        </a>
+          <a href="about.html">
+          About
+        </a>
+        <a href="services.html">
+          Services
+        </a>
+
+        <a href="products.html">
+          Products
+        </a>
+
+    
+        <a href="contact.html">
+          Contact
+        </a>
+
+      </nav>
+
+      <div class="nav-cta">
+
+        <span class="nav-phone">
+          +251 (0) 20 555 0199
+        </span>
+
+      </div>
+
+      <button
+        class="burger"
+        id="burgerBtn"
+        aria-label="Open menu"
+      >
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </button>
+
+    </div>
+
+  </header>
+
+
+  <!-- ==========================================
+       MOBILE NAV
+  =========================================== -->
+
+  <div
+    class="mobile-nav"
+    id="mobileNav"
+  >
+
+    <button
+      class="mobile-close"
+      id="mobileClose"
+      aria-label="Close menu"
+    >
+      &times;
+    </button>
+
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+
+  </div>
+
+
+  <!-- ==========================================
+       PAGE HEADER
+  =========================================== -->
+
+  <section class="page-header">
+
+    <div class="wrap">
+
+      <p class="eyebrow">
+        What We Supply
+      </p>
+
+      <h1>
+        Our Products
+      </h1>
+
+      <div class="breadcrumb">
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <span>/</span>
+
+        Products
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ==========================================
+       PRODUCTS SHOWROOM
+  =========================================== -->
+
+  <section class="product-showroom">
+
+    <div class="wrap">
+
+
+      <!-- HEADING -->
+
+      <div class="product-showroom-head">
+
+        <div>
+
+          <p class="eyebrow">
+            Product Categories
+          </p>
+
+          <h2>
+            Engineered Systems<br>
+            & Equipment
+          </h2>
+
+        </div>
+
+
+        <p class="product-showroom-intro">
+          Explore equipment and systems for renewable energy,
+          water infrastructure, agriculture, electrical works,
+          and industrial automation.
+        </p>
+
+      </div>
+
+
+      <!-- SHOWROOM -->
+
+      <div class="product-showroom-layout">
+
+
+        <!-- ======================================
+             MAIN PRODUCT DISPLAY
+        ======================================= -->
+
+        <div class="product-display">
+
+
+          <!-- MEDIA -->
+
+          <div class="product-display-media">
+
+            <div class="product-display-placeholder">
+
+              <span>
+                PRODUCT IMAGE
+              </span>
+
+            </div>
+
+            <span
+              class="product-display-number"
+              id="displayNumber"
+            >
+              01
+            </span>
+
+          </div>
+
+
+          <!-- PRODUCT INFO -->
+
+          <div class="product-display-info">
+
+            <p
+              class="eyebrow"
+              id="displayCategory"
+            >
+              Renewable Energy
+            </p>
+
+
+            <h3 id="displayTitle">
+              Solar & Renewable Energy
+            </h3>
+
+
+            <p
+              class="product-display-description"
+              id="displayDescription"
+            >
+              Solar and energy storage equipment designed
+              for reliable and sustainable power systems.
+            </p>
+
+
+            <div
+              class="product-display-tags"
+              id="displayTags"
+            >
+
+              <span>Solar PV Systems</span>
+              <span>Battery Energy Storage</span>
+              <span>Energy Systems</span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ======================================
+             PRODUCT SELECTOR
+        ======================================= -->
+
+        <div class="product-selector">
+
+
+          <!-- 01 -->
+
+          <button
+            class="product-selector-item active"
+            data-number="01"
+            data-category="Renewable Energy"
+            data-title="Solar & Renewable Energy"
+            data-description="Solar and energy storage equipment designed for reliable and sustainable power systems."
+            data-tags="Solar PV Systems|Battery Energy Storage|Energy Systems"
+          >
+
+            <span class="selector-number">
+              01
+            </span>
+
+            <span class="selector-title">
+              Solar & Renewable Energy
+            </span>
+
+            <span class="selector-arrow">
+              →
+            </span>
+
+          </button>
+
+
+          <!-- 02 -->
+
+          <button
+            class="product-selector-item"
+            data-number="02"
+            data-category="Water Infrastructure"
+            data-title="Water & Pumping Equipment"
+            data-description="Equipment supporting water supply, pumping, treatment and distribution systems."
+            data-tags="Pumping Systems|Water Treatment Equipment|Distribution Equipment"
+          >
+
+            <span class="selector-number">
+              02
+            </span>
+
+            <span class="selector-title">
+              Water & Pumping Equipment
+            </span>
+
+            <span class="selector-arrow">
+              →
+            </span>
+
+          </button>
+
+
+          <!-- 03 -->
+
+          <button
+            class="product-selector-item"
+            data-number="03"
+            data-category="Agriculture"
+            data-title="Irrigation Systems"
+            data-description="Efficient irrigation systems designed for modern agricultural applications."
+            data-tags="Center Pivot Irrigation|Drip Irrigation|Sprinkler Systems"
+          >
+
+            <span class="selector-number">
+              03
+            </span>
+
+            <span class="selector-title">
+              Irrigation Systems
+            </span>
+
+            <span class="selector-arrow">
+              →
+            </span>
+
+          </button>
+
+
+          <!-- 04 -->
+
+          <button
+            class="product-selector-item"
+            data-number="04"
+            data-category="Agriculture"
+            data-title="Agricultural Machinery"
+            data-description="Machinery and equipment supporting productive and efficient farm operations."
+            data-tags="Agricultural Machinery|Farm Mechanization Equipment|Pumping Equipment"
+          >
+
+            <span class="selector-number">
+              04
+            </span>
+
+            <span class="selector-title">
+              Agricultural Machinery
+            </span>
+
+            <span class="selector-arrow">
+              →
+            </span>
+
+          </button>
+
+
+          <!-- 05 -->
+
+          <button
+            class="product-selector-item"
+            data-number="05"
+            data-category="Electrical"
+            data-title="Electrical Equipment"
+            data-description="Electrical equipment and control systems for infrastructure and industrial applications."
+            data-tags="Motor Control Centers|VFD Systems|Generator Systems"
+          >
+
+            <span class="selector-number">
+              05
+            </span>
+
+            <span class="selector-title">
+              Electrical Equipment
+            </span>
+
+            <span class="selector-arrow">
+              →
+            </span>
+
+          </button>
+
+
+          <!-- 06 -->
+
+          <button
+            class="product-selector-item"
+            data-number="06"
+            data-category="Automation"
+            data-title="Automation & Control Equipment"
+            data-description="Smart monitoring and control equipment for automated industrial and infrastructure systems."
+            data-tags="PLC Systems|SCADA Systems|Remote Monitoring|IoT Monitoring"
+          >
+
+            <span class="selector-number">
+              06
+            </span>
+
+            <span class="selector-title">
+              Automation & Control
+            </span>
+
+            <span class="selector-arrow">
+              →
+            </span>
+
+          </button>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ==========================================
+       PRODUCT NOTE / MEDIA PLACEHOLDER
+  =========================================== -->
+
+  <section class="feature-image">
+
+    <div class="feature-image-bg"></div>
+
+    <div class="wrap feature-image-content">
+
+      <p
+        class="eyebrow"
+        style="color:#a9a9a4;"
+      >
+        Product Media
+      </p>
+
+      <h2>
+        Equipment For<br>
+        Real Projects
+      </h2>
+
+      <p>
+        This section can later feature actual B&E products,
+        equipment installations, supplier images, or project videos.
+      </p>
+
+      <a
+        href="contact.html"
+        class="btn ghost"
+      >
+        Request Information &rarr;
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- ==========================================
+       FINAL CTA
+  =========================================== -->
+
+  <section class="final-cta">
+
+    <div class="wrap">
+
+      <p class="eyebrow">
+        Need Equipment?
+      </p>
+
+      <h2>
+        Let's Find The Right Solution.
+      </h2>
+
+      <p>
+        Talk to our team about the equipment and systems
+        required for your energy, water, agriculture,
+        electrical, or automation project.
+      </p>
+
+      <div class="final-cta-btns">
+
+        <a
+          href="contact.html"
+          class="btn"
+        >
+          Contact Us &rarr;
+        </a>
+
+        <a
+          href="services.html"
+          class="btn ghost"
+        >
+          View Services &rarr;
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ==========================================
+       FOOTER
+  =========================================== -->
+
+  <footer>
+
+    <div class="wrap">
+
+      <div class="footer-grid">
+
+        <a
+          href="index.html"
+          class="logo"
+        >
+
+          <span class="mark"></span>
+          B&E
+
+        </a>
+
+
+        <div class="footer-links">
+
+          <a href="index.html">
+            Home
+          </a>
+
+          <a href="services.html">
+            Services
+          </a>
+
+          <a href="products.html">
+            Products
+          </a>
+
+          <a href="about.html">
+            About
+          </a>
+
+        </div>
+
+
+        <a
+          href="contact.html"
+          class="btn ghost"
+        >
+          Get In Touch
+        </a>
+
+      </div>
+
+
+      <div
+        class="wrap footer-bottom"
+        style="padding:0;"
+      >
+
+        <span>
+          &copy; 2026 B&E Engineering.
+          All rights reserved.
+        </span>
+
+        <span>
+          Hawassa, Ethiopia —
+          +251 (0) 20 555 0199
+        </span>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

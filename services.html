@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>B&E — Services</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <!-- ==========================================
+       THEME TOGGLE
+  =========================================== -->
+
+  <button
+    class="theme-toggle"
+    id="themeToggle"
+    aria-label="Toggle light and dark mode"
+  >
+
+    <span class="label">Light</span>
+
+    <span class="icons">
+
+      <!-- Moon -->
+      <svg class="moon" viewBox="0 0 24 24">
+        <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/>
+      </svg>
+
+      <!-- Sun -->
+      <svg class="sun" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4"/>
+        <path
+          d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"
+        />
+      </svg>
+
+    </span>
+
+  </button>
+
+
+  <!-- ==========================================
+       HEADER
+  =========================================== -->
+
+  <header>
+
+    <div class="wrap nav">
+
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <span class="mark"></span>
+        B&E
+      </a>
+
+
+      <!-- Desktop Navigation -->
+       <nav class="nav-links">
+
+        <a href="index.html">
+          Home
+        </a>
+          <a href="about.html">
+          About
+        </a>
+        <a href="services.html">
+          Services
+        </a>
+
+        <a href="products.html">
+          Products
+        </a>
+
+    
+        <a href="contact.html">
+          Contact
+        </a>
+
+      </nav>
+
+
+      <!-- Phone -->
+      <div class="nav-cta">
+
+        <span class="nav-phone">
+          +251 (0) 20 555 0199
+        </span>
+
+      </div>
+
+
+      <!-- Mobile Burger -->
+      <button
+        class="burger"
+        id="burgerBtn"
+        aria-label="Open menu"
+      >
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </button>
+
+    </div>
+
+  </header>
+
+
+  <!-- ==========================================
+       MOBILE NAV
+  =========================================== -->
+
+  <div class="mobile-nav" id="mobileNav">
+
+    <button
+      class="mobile-close"
+      id="mobileClose"
+      aria-label="Close menu"
+    >
+      &times;
+    </button>
+
+    <a href="index.html">
+      Home
+    </a>
+
+    <a href="services.html">
+      Services
+    </a>
+
+    <a href="products.html">
+      Products
+    </a>
+
+    <a href="about.html">
+      About
+    </a>
+
+    <a href="contact.html">
+      Contact
+    </a>
+
+  </div>
+
+
+  <!-- ==========================================
+       PAGE HEADER
+  =========================================== -->
+
+  <section class="page-header">
+
+    <div class="wrap">
+
+      <p class="eyebrow">
+        What We Do
+      </p>
+
+      <h1>
+        Our Services
+      </h1>
+
+      <div class="breadcrumb">
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <span>/</span>
+
+        Services
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ==========================================
+       SERVICES
+  =========================================== -->
+
+  <section class="services-simple">
+
+    <div class="wrap">
+
+
+      <!-- Heading -->
+
+      <div class="services-simple-head">
+
+        <p class="eyebrow">
+          Our Expertise
+        </p>
+
+        <h2>
+          Engineering Solutions
+        </h2>
+
+        <p>
+          Engineering solutions for energy, water, agriculture,
+          infrastructure and industry.
+        </p>
+
+      </div>
+
+
+      <!-- ======================================
+           SERVICE CARDS
+      ======================================= -->
+
+      <div class="services-simple-grid">
+
+
+        <!-- 01 Renewable Energy -->
+
+        <article class="simple-service-card">
+
+          <span class="simple-service-number">
+            01
+          </span>
+
+          <div class="simple-service-content">
+
+            <h3>
+              Renewable Energy
+            </h3>
+
+            <p>
+              Solar, hydropower, rural electrification
+              and energy storage solutions.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <!-- 02 Water -->
+
+        <article class="simple-service-card">
+
+          <span class="simple-service-number">
+            02
+          </span>
+
+          <div class="simple-service-content">
+
+            <h3>
+              Water Resources & Infrastructure
+            </h3>
+
+            <p>
+              Water supply, treatment, pumping
+              and distribution solutions.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <!-- 03 Agriculture -->
+
+        <article class="simple-service-card">
+
+          <span class="simple-service-number">
+            03
+          </span>
+
+          <div class="simple-service-content">
+
+            <h3>
+              Irrigation & Agricultural Mechanization
+            </h3>
+
+            <p>
+              Modern irrigation, pumping and
+              farm mechanization solutions.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <!-- 04 EPC -->
+
+        <article class="simple-service-card">
+
+          <span class="simple-service-number">
+            04
+          </span>
+
+          <div class="simple-service-content">
+
+            <h3>
+              Engineering, Procurement & Construction
+            </h3>
+
+            <p>
+              Complete EPC delivery from design
+              through testing and commissioning.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <!-- 05 Electrical -->
+
+        <article class="simple-service-card">
+
+          <span class="simple-service-number">
+            05
+          </span>
+
+          <div class="simple-service-content">
+
+            <h3>
+              Electrical & Electro-Mechanical Works
+            </h3>
+
+            <p>
+              Electrical installation, control and
+              electro-mechanical solutions.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <!-- 06 Training -->
+
+        <article class="simple-service-card">
+
+          <span class="simple-service-number">
+            06
+          </span>
+
+          <div class="simple-service-content">
+
+            <h3>
+              Technical Education & Training
+            </h3>
+
+            <p>
+              Practical engineering and
+              technical skills development.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <!-- 07 Automation -->
+
+        <article class="simple-service-card">
+
+          <span class="simple-service-number">
+            07
+          </span>
+
+          <div class="simple-service-content">
+
+            <h3>
+              Industrial Automation
+            </h3>
+
+            <p>
+              PLC, SCADA, remote monitoring
+              and smart control solutions.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <!-- 08 Consultancy -->
+
+        <article class="simple-service-card">
+
+          <span class="simple-service-number">
+            08
+          </span>
+
+          <div class="simple-service-content">
+
+            <h3>
+              Consultancy Services
+            </h3>
+
+            <p>
+              Feasibility, engineering design,
+              advisory and project supervision.
+            </p>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ==========================================
+       CTA
+  =========================================== -->
+
+  <section class="final-cta">
+
+    <div class="wrap">
+
+      <p class="eyebrow">
+        Work With Us
+      </p>
+
+      <h2>
+        Let's Build What's Next.
+      </h2>
+
+      <p>
+        Engineering solutions for a more sustainable,
+        connected and productive Africa.
+      </p>
+
+      <div class="final-cta-btns">
+
+        <a
+          href="contact.html"
+          class="btn"
+        >
+          Start A Project &rarr;
+        </a>
+
+        <a
+          href="products.html"
+          class="btn ghost"
+        >
+          Explore Products &rarr;
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ==========================================
+       FOOTER
+  =========================================== -->
+
+  <footer>
+
+    <div class="wrap">
+
+
+      <div class="footer-grid">
+
+
+        <!-- Logo -->
+
+        <a
+          href="index.html"
+          class="logo"
+        >
+
+          <span class="mark"></span>
+
+          B&E
+
+        </a>
+
+
+        <!-- Footer Navigation -->
+
+        <div class="footer-links">
+
+          <a href="index.html">
+            Home
+          </a>
+
+          <a href="services.html">
+            Services
+          </a>
+
+          <a href="products.html">
+            Products
+          </a>
+
+          <a href="about.html">
+            About
+          </a>
+
+        </div>
+
+
+        <!-- Contact Button -->
+
+        <a
+          href="contact.html"
+          class="btn ghost"
+        >
+          Get In Touch
+        </a>
+
+
+      </div>
+
+
+      <!-- Footer Bottom -->
+
+      <div
+        class="wrap footer-bottom"
+        style="padding:0;"
+      >
+
+        <span>
+          &copy; 2026 B&E Engineering.
+          All rights reserved.
+        </span>
+
+        <span>
+          Hawassa, Ethiopia —
+          +251 (0) 20 555 0199
+        </span>
+
+      </div>
+
+
+    </div>
+
+  </footer>
+
+
+  <!-- ==========================================
+       JAVASCRIPT
+  =========================================== -->
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>

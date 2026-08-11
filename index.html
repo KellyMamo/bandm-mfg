@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B&E — Engineering Sustainable Solutions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
+  <span class="label">Light</span>
+  <span class="icons">
+    <svg class="moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/></svg>
+    <svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+  </span>
+</button>
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="logo"><span class="mark"></span>B&E</a>
+     <nav class="nav-links">
+
+        <a href="index.html">
+          Home
+        </a>
+          <a href="about.html">
+          About
+        </a>
+        <a href="services.html">
+          Services
+        </a>
+
+        <a href="products.html">
+          Products
+        </a>
+
+    
+        <a href="contact.html">
+          Contact
+        </a>
+
+      </nav>
+    <div class="nav-cta">
+      <span class="nav-phone">+251 (0) 20 555 0199</span>
+     
+    </div>
+    <button class="burger" id="burgerBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-close" id="mobileClose" aria-label="Close menu">&times;</button>
+ <a href="index.html#home">Home</a>
+      <a href="index.html#offer">Services</a>
+      <a href="product.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="about.html#contact">Contact</a>
+</div>
+
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <aside class="side-rail">
+    <div class="side-block">
+      <div class="side-icon"><svg viewBox="0 0 24 24"><path d="M12 2v20M2 12h20M12 2a10 10 0 010 20 10 10 0 010-20z"/></svg></div>
+      <p class="eyebrow" style="color:#9c9c98;">Renewable Energy</p>
+      <p>Solar &bull; Hydropower<br>Rural Electrification</p>
+    </div>
+    <div class="side-block">
+      <div class="side-icon"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg></div>
+      <p class="eyebrow" style="color:#9c9c98;">Engineering &amp; EPC</p>
+      <p>Design &bull; Procurement<br>Construction</p>
+    </div>
+  </aside>
+  <div class="wrap hero-content" style="padding-left:calc(190px + 2rem);">
+    <p class="eyebrow">Renewable Energy. Water. Agriculture. Infrastructure.</p>
+    <h1>Engineering Sustainable Solutions</h1>
+    <p>We design and deliver reliable engineering and EPC solutions that power industries, strengthen communities, and support sustainable development across Africa.</p>
+    <a href="#offer" class="btn">Explore Our Services
+      <svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</section>
+
+<section class="band" id="offer">
+  <div class="wrap">
+    <div class="band-head">
+      <div>
+        <p class="eyebrow">What We Deliver</p>
+        <h2>Engineered For Progress. Built For A Sustainable Future.</h2>
+      </div>
+      <div class="band-arrows">
+        <button aria-label="Previous"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button aria-label="Next"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap offer-cards">
+  <div class="card-grid">
+    <article class="card">
+      <figure><img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800&auto=format&fit=crop" alt="Solar panels"></figure>
+      <div class="card-body">
+        <h3>Renewable Energy</h3>
+        <p>Solar PV, small-scale hydropower, rural electrification and battery storage solutions.</p>
+        <a href="#" class="read-more">Explore &rarr;</a>
+      </div>
+    </article>
+    <article class="card">
+      <figure><img src="https://images.unsplash.com/photo-1541844053589-346841d0b34c?q=80&w=800&auto=format&fit=crop" alt="Water infrastructure"></figure>
+      <div class="card-body">
+        <h3>Water Infrastructure</h3>
+        <p>Boreholes, water supply, treatment, pumping and distribution systems.</p>
+        <a href="#" class="read-more">Explore &rarr;</a>
+      </div>
+    </article>
+    <article class="card">
+      <figure><img src="https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?q=80&w=800&auto=format&fit=crop" alt="Agricultural irrigation"></figure>
+      <div class="card-body">
+        <h3>Agricultural Solutions</h3>
+        <p>Center pivot, drip and sprinkler irrigation, pumping and farm mechanization.</p>
+        <a href="#" class="read-more">Explore &rarr;</a>
+      </div>
+    </article>
+    <article class="card">
+      <figure><img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=800&auto=format&fit=crop" alt="Engineering and construction"></figure>
+      <div class="card-body">
+        <h3>EPC &amp; Engineering</h3>
+        <p>Complete project delivery from engineering and procurement to construction and commissioning.</p>
+        <a href="#" class="read-more">Explore &rarr;</a>
+      </div>
+    </article>
+  </div>
+</div>
+
+<section class="values" id="values">
+  <div class="wrap values-grid">
+    <div class="values-list">
+      <div class="value-item"><span class="num">01</span><span class="label">Integrity</span></div>
+      <div class="value-item"><span class="num">02</span><span class="label">Excellence</span></div>
+      <div class="value-item"><span class="num">03</span><span class="label">Innovation</span></div>
+      <div class="value-item"><span class="num">04</span><span class="label">Sustainability</span></div>
+      <div class="value-item"><span class="num">05</span><span class="label">Safety</span></div>
+    </div>
+    <div class="values-side">
+      <h3 class="small-head">Engineered With Purpose</h3>
+      <p>We combine engineering expertise, innovative technology, and sustainable practices to deliver solutions that create lasting value for our clients and communities.</p>
+      <h3 class="small-head">Innovation That Creates Impact</h3>
+      <p>From renewable energy and smart irrigation to industrial automation and water infrastructure, we use modern engineering technologies to solve real-world challenges and improve the way communities and industries operate.</p>
+      <a href="about.html" class="btn" style="background:var(--ink); border-color:var(--ink); color:var(--bg);">Discover Our Approach &rarr;</a>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="feature-image">
+  <div class="feature-image-bg"></div>
+  <div class="wrap feature-image-content">
+    <p class="eyebrow" style="color:#a9a9a4;">Engineering That Makes An Impact</p>
+    <h2>Sustainable<br>Engineering<br>For Africa</h2>
+    <p>From remote communities to industrial facilities, we deliver infrastructure designed to perform, endure, and create measurable impact.</p>
+    <a href="#" class="btn ghost">View Our Projects &rarr;</a>
+  </div>
+</section>
+
+
+
+<section class="vision-section">
+  <div class="wrap">
+    <p class="eyebrow" style="color:#a9a9a4;">Our Vision</p>
+    <h2>To become Africa's leading engineering and EPC company, delivering innovative solutions that transform communities and promote sustainable development.</h2>
+    <ul class="vision-tags">
+      <li>Energy</li>
+      <li>Water</li>
+      <li>Agriculture</li>
+      <li>Infrastructure</li>
+      <li>Education</li>
+    </ul>
+  </div>
+</section>
+
+<section class="why-us-section">
+  <div class="wrap">
+    <div class="team-head">
+      <p class="eyebrow">Why Work With Us</p>
+      <h2>What Sets Us Apart</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <span class="num">01</span>
+        <h4>End-To-End Delivery</h4>
+        <p>From feasibility and engineering to construction, commissioning and maintenance.</p>
+      </div>
+      <div class="why-card">
+        <span class="num">02</span>
+        <h4>Innovative Technology</h4>
+        <p>Modern engineering, automation and smart monitoring solutions.</p>
+      </div>
+      <div class="why-card">
+        <span class="num">03</span>
+        <h4>Quality &amp; Safety</h4>
+        <p>Reliable solutions delivered with rigorous quality and safety standards.</p>
+      </div>
+      <div class="why-card">
+        <span class="num">04</span>
+        <h4>Sustainable Impact</h4>
+        <p>Infrastructure designed to create lasting environmental, economic and social value.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="wrap">
+    <h2>Let's Build What's Next.</h2>
+    <p>Engineering solutions for a more sustainable, connected and productive Africa.</p>
+    <div class="final-cta-btns">
+      <a href="about.html#contact" class="btn">Start A Project &rarr;</a>
+      <a href="about.html#contact" class="btn ghost">Contact Us &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <a href="index.html" class="logo"><span class="mark"></span>B&E</a>
+      <div class="footer-links">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#offer">Services</a>
+        <a href="index.html#values">Values</a>
+        <a href="index.html#competence">Expertise</a>
+      </div>
+      <a href="about.html#contact" class="btn ghost">Get In Touch</a>
+    </div>
+    <div class="wrap footer-bottom" style="padding:0;">
+      <span>&copy; 2026 B&E Engineering. All rights reserved.</span>
+      <span>Hawassa, Ethiopia — +251 (0) 20 555 0199</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
