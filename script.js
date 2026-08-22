@@ -1,31 +1,45 @@
 // ----- Theme toggle -----
   var root = document.documentElement;
   var themeToggle = document.getElementById('themeToggle');
-  var themeLabel = themeToggle.querySelector('.label');
 
   function applyTheme(theme){
     root.setAttribute('data-theme', theme);
-    themeLabel.textContent = theme === 'dark' ? '   ' : 'Light';
+    if (themeToggle) {
+      var themeLabel = themeToggle.querySelector('.label');
+      if (themeLabel) {
+        themeLabel.textContent = theme === 'dark' ? 'Dark' : 'Light';
+      }
+    }
+    localStorage.setItem('theme', theme);
   }
 
-  var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-  applyTheme(prefersDark ? 'dark' : 'light');
+  var savedTheme = localStorage.getItem('theme');
+  var defaultTheme = savedTheme ? savedTheme : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  applyTheme(defaultTheme);
 
-  themeToggle.addEventListener('click', function(){
-    var current = root.getAttribute('data-theme');
-    applyTheme(current === 'dark' ? 'light' : 'dark');
-  });
+  if (themeToggle) {
+    themeToggle.addEventListener('click', function(){
+      var current = root.getAttribute('data-theme');
+      applyTheme(current === 'dark' ? 'light' : 'dark');
+    });
+  }
 
   // ----- Mobile nav -----
   var burgerBtn = document.getElementById('burgerBtn');
   var mobileNav = document.getElementById('mobileNav');
   var mobileClose = document.getElementById('mobileClose');
 
-  burgerBtn.addEventListener('click', function(){ mobileNav.classList.add('open'); });
-  mobileClose.addEventListener('click', function(){ mobileNav.classList.remove('open'); });
-  mobileNav.querySelectorAll('a').forEach(function(a){
-    a.addEventListener('click', function(){ mobileNav.classList.remove('open'); });
-  });
+  if (burgerBtn && mobileNav) {
+    burgerBtn.addEventListener('click', function(){ mobileNav.classList.add('open'); });
+  }
+  if (mobileClose && mobileNav) {
+    mobileClose.addEventListener('click', function(){ mobileNav.classList.remove('open'); });
+  }
+  if (mobileNav) {
+    mobileNav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){ mobileNav.classList.remove('open'); });
+    });
+  }
 
   // ----- Card carousel arrows (simple scroll nudge on small screens / visual feedback) -----
   var cardGrid = document.querySelector('.card-grid');
